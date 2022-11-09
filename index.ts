@@ -9,5 +9,11 @@ export const timeToMs = (num: number | string, unit: UnitTypes): number => {
       case "ms":
       case "millisecond":
         return num
+      case "s":
+      case "second":
+            return num * msUnits.second
+      case "m":
+      case "minute":
+            return num * msUnits.minute
     }
 }
