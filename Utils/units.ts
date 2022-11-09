@@ -1,3 +1,12 @@
-export const ms = 1
-export const second = ms *  1000
-export const minute = 
+export const msUnits = { 
+  ms = 1,
+  second = ms *  1000,
+  minute = second * 60,
+  hour = minute * 60,
+  day = hour * 24,
+  week = day * 7,
+  month = day * 30,
+  year = month * 12,
+  century = year * 100,
+  millenium = century * 10
+}
