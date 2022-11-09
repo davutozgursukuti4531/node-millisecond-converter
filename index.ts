@@ -3,9 +3,9 @@ import { msUnits } from "./Utils/units"
 import { UnitTypes } from "./Types/Types"
 
 
-export const timeToMs = (num: number | string, unit: UnitTypes): number => {
+export const timeToMs = (num: number | string, options: { unit: UnitTypes }): number => {
     if(typeof num === "string") num = Number(num)
-    switch(unit){
+    switch(options.unit){
       case "ms":
       case "millisecond":
         return num
@@ -15,5 +15,26 @@ export const timeToMs = (num: number | string, unit: UnitTypes): number => {
       case "m":
       case "minute":
             return num * msUnits.minute
+      case "h":
+      case "hour":
+            return num * msUnits.hour
+      case "d":
+      case "day":
+            return num * msUnits.day
+      case "w":
+      case "week":
+            return num * msUnits.week
+      case "mo":
+      case "month":
+            return num * msUnits.month
+      case "y":
+      case "year":
+            return num * msUnits.year
+      case "c":
+      case "century":
+            return num * msUnits.century
+      case "mi":
+      case "millenium":
+            return num * msUnits.millenium
     }
 }
