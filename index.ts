@@ -1,8 +1,9 @@
 import numberify from "./Utils/numberify"
 import { msUnits } from "./Utils/units"
+import { UnitTypes } from "./Types/Types"
 
 
-export const timeToMs = (num: number | string, unit): number => {
+export const timeToMs = (num: number | string, unit: UnitTypes): number => {
     if(typeof num === "string") num = Number(num)
     switch(unit){
       case "ms":
