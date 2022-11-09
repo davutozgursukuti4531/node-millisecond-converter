@@ -1,1 +1,22 @@
-
+export interface UnitTypes {
+   millisecond,
+   ms,
+   second,
+   s,
+   minute,
+   m,
+   hour,
+   h,
+   day,
+   d,
+   week,
+   w,
+   month,
+   mo,
+   year,
+   y,
+   century,
+   c,
+   millenium,
+   mi
+}
