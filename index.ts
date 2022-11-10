@@ -72,6 +72,6 @@ export const msToTime = (num: number | string, options?: { unit: UnitTypes }) =>
             return num / msUnits.century
       case "mi":
       case "millenium":
-            retur num / msUnits.millenium
+            return num / msUnits.millenium
     }
 }
