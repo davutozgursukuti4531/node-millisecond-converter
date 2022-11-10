@@ -3,7 +3,7 @@ import { msUnits } from "./Utils/units"
 import { UnitTypes } from "./Types/Types"
 
 
-export const timeToMs = (num: number | string, options: { unit: UnitTypes }): number => {
+export const timeToMs = (num: number | string, options: { unit: UnitTypes, convertTo?: UnitTypes = "ms" }): number => {
     if(typeof num === "string") num = Number(num)
     switch(options.unit){
       case "ms":
